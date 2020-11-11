@@ -1,0 +1,35 @@
+{
+    "name": "ayles-software/laravel-zoho-desk",
+    "description": "Laravel wrapper for Zoho Desk",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "zoho",
+        "desk",
+        "oauth",
+        "laravel"
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "laravel/framework": "^6.0||^7.0||^8.0",
+        "league/oauth2-client": "^2.6"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.15"
+    },
+    "autoload": {
+        "psr-4": {
+            "AylesSoftware\\ZohoDesk\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AylesSoftware\\ZohoDesk\\ServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "cs-fix": "vendor/bin/php-cs-fixer fix"
+    }
+}
