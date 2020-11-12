@@ -66,7 +66,7 @@ class ZohoOAuth
             ZohoDeskAccess::setAllObsolete();
 
             $this->credentials = ZohoDeskAccess::create([
-                'refresh_token' => $this->token->getRefreshToken(),
+                'refresh_token' => $this->token->getRefreshToken() ?: ($this->credentials->refresh_token ?? null),
                 'token' => $this->token->getToken(),
                 'expires_at' => now()->addMinutes(59),
             ]);
