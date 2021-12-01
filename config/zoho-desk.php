@@ -11,4 +11,5 @@ return [
     'access_type' => env('ZOHO_DESK_ACCESS_TYPE', 'offline'),
     'organisation_id' => env('ZOHO_DESK_ORGANISATION_ID'),
     'base_url' => env('ZOHO_DESK_BASE_URL', 'https://desk.zoho.com.au'),
+    'accounts_server' => env('ZOHO_DESK_ACCOUNTS_SERVER', 'https://accounts.zoho.com.au'),
 ];
