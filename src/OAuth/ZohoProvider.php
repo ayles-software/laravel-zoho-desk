@@ -14,7 +14,7 @@ class ZohoProvider extends AbstractProvider
 
     public function accountsServer()
     {
-        return 'https://accounts.zoho.com.au';
+        return config('zoho-desk.accounts_server');
     }
 
     public function hostResourceLocation()
